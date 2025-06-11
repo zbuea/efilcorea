@@ -1,0 +1,132 @@
+/*
+primary   #033076
+liseret #a8c6fa 
+bg      #d4e3fc
+white   #ffffff
+*/
+html {font-size: 100%;}
+
+body {font-size: .9em;}
+
+h1 {font-size: 1.7em;margin-top: 10px}
+
+h2 {font-size: 1.5em;margin-top: 10px}
+
+h3 {font-size: 1.3em;margin-top: 10px}
+
+h4 {font-size: 1.2em;margin-top: 20px; font-weight: bold;}
+
+/*label {font-size: 1.1em;}*/
+
+button {font-size: 1.1em;}
+
+.panel-body p {
+  font-size: 1.3em;
+  line-height: 1.0;
+}
+
+.panel-white {
+  background-color: #fff;
+  color: #033076;
+  border: 1px solid #033076;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel-primary  {
+  border: 1px solid #a8c6fa;
+}
+
+.panel-primary .form-control {
+  border: 1px solid #a8c6fa;
+}
+
+.btn {
+  font-size: larger;
+}
+
+.btn-primary:hover{
+  background-color: #fff;
+  color: #033076;
+  border: 1px solid #033076;
+}
+
+.panel-bloc .panel-heading {
+  background-color: #fff;
+  color: #033076;
+  border: 1px solid #a8c6fa;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel-bloc .panel-body {
+  background-color: #d4e3fc;
+  color: #033076;
+  border: 1px solid #a8c6fa;
+  border-top: 0px solid #fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.panel-bloc .panel-body .btn-primary{
+  background-color: #fff;
+  color: #033076;
+  border: 1px solid #033076;
+}
+
+.panel-bloc .panel-body .btn-primary:hover{
+  background-color: #033076;
+  color: #fff;
+  border: 1px solid #033076;
+}
+
+.panel-bloc-with-top .panel-body {
+  background-color: #d4e3fc;
+  color: #033076;
+  border: 1px solid #a8c6fa;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 992px) {
+  .bloc-top {
+    display:table-cell;
+    float:none;
+    vertical-align:top;
+  }
+
+  .bloc-bottom {
+    display:table-cell;
+    float:none;
+    vertical-align:bottom;
+  }
+}
+
+.panel-bloc-warning .panel-heading {
+  background-color: #fff;
+  color: #B5000D;
+  border: 1px solid #FF9E4A;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel-bloc-warning .panel-body {
+  background-color: #FEEBD8;
+  color: #B5000D;
+  border: 1px solid #FF9E4A;
+  border-top: 0px solid #fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.panel-bloc-warning .panel-body .btn-primary{
+  background-color: #B5000D;
+  color: #fff;
+  border: 1px solid #B5000D;
+}
+
+.panel-bloc-warning .panel-body .btn-primary:hover{
+  background-color: #fff;
+  color: #B5000D;
+  border: 1px solid #B5000D;
+}
+

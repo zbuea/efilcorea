@@ -1,0 +1,69 @@
+// Instance the tour
+    var tour1 = new Tour({
+      template: " <div class='popover tour' style='background:#d4e3fc;color:#033076'> \
+                    <div class='arrow'></div> \
+                    <h3 class='popover-title'></h3> \
+                    <div class='popover-content'></div> \
+                    <nav class='popover-navigation text-center'> \
+                      <div class='btn-group'> \
+                        <button class='btn btn-default' data-role='prev'>&larr;pr&eacute;c&eacute;dent</button> \
+                        <button class='btn btn-default' data-role='next'>suivant&rarr;</button> \
+                      </div> \
+                      <div class='btn-group'> \
+                      <button class='btn btn-default' data-role='end'>terminer la pr&eacute;sentation</button> \
+                      </div>\
+                    </nav> \
+                  </div>",
+
+      steps: [
+      {
+        orphan: true,
+        title: "Le guichet d\'authentification acad&eacute;mique a chang&eacute; pour :",
+        content: "<ul> \
+                    <li>une accessibilit&eacute; am&eacute;lior&eacute;e pour les personnes en situation de handicap ;</li> \
+                    <li>une adaptation de l'interface aux diff&eacute;rents terminaux mobiles ;</li> \
+                    <li>une ergonomie am&eacute;lior&eacute;e.</li> \
+                  </ul>",
+        backdrop: true
+      },
+      {
+        element: "#bst-conseils",
+        title: "Confidentialit&eacute; et s&eacute;curit&eacute;",
+        content: "Quelques conseils et bonnes pratiques concernant la confidentialit&eacute; et la s&eacute;curit&eacute;.",
+        placement: 'left',
+        backdrop: true
+      },
+      {
+        element: "#bst-aide",
+        title: "Aide",
+        content: "Une rublique d'aide si vous vous connectez pour la 1&egrave;re fois ou si vous avec oubli&eacute; votre identifiant ou votre mot de passe.",
+        placement: 'top',
+        backdrop: true
+      },
+      {
+        element: "#bst-charte",
+        title: "Charte",
+        content: "L'acc&egrave; &agrave; la charte d'utilisation de la messagerie.",
+        placement: 'left',
+        backdrop: true
+      },
+      {
+        element: "#bst-assistance",
+        title: "Assistance",
+        content: "En un click, tout ce dont vous avez besoin pour contacter l'assistance.",
+        placement: 'top',
+        backdrop: true
+      }
+    ]});
+
+    // Initialize the tour
+    tour1.init();
+
+    // Start the tour
+    //tour1.start();
+
+    // Resume
+    $("#resume-tour").on("click", function() {
+      //tour1.start(true);
+      tour1.restart();
+    });
